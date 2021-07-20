@@ -1,0 +1,17 @@
+asgiref
+asn1crypto
+click
+colorama
+fastapi
+greenlet
+h11
+mysqlclient
+protobuf
+pydantic
+python-multipart
+scramp
+six
+SQLAlchemy
+starlette
+typing-extensions
+uvicorn
