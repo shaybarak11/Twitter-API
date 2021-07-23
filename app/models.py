@@ -26,15 +26,3 @@ class Retweet(Base):
     username = Column(VARCHAR(50), primary_key=True, nullable=False)
     post_id = Column(Integer, ForeignKey('tweets.post_id', ondelete="CASCADE"), primary_key=True)
     timestamp = Column(DateTime, default=datetime.now)
-
-
-class User(Base):
-    __tablename__ = 'users'
-
-    username = Column(VARCHAR(50), primary_key=True, nullable=False)
-    full_name = Column(VARCHAR(50), nullable=False)
-    password = Column(VARCHAR(100), nullable=False)
-
-
-
-

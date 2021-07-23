@@ -1,5 +1,11 @@
 version: '3.4'
 services:
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8080:8080
   mysql:
     image: mysql:latest
     command: mysqld --default-authentication-plugin=mysql_native_password
