@@ -19,6 +19,7 @@ By default the application sets username as root, password as password, host as 
 You can modify it by sets those environment variables. 
 
 For instance, using Powershell it would look like this:
+
 ` $env:USERNAME = "your username" `
 
 ` $env:PASSWORD = "your password" `
