@@ -12,14 +12,21 @@ pip install -r requirements.txt
 
 ## Usage
 
-To run the application, you need to tell your terminal the application to work with by exporting the environment variables that connects the application to your database.
+To run the application, you need first to tell your terminal the application to work with by exporting the environment variables that connects the application to your database.
+
 By default the application sets username as root, password as password, host as localhost, port as 3306 and "twitter" as the database's name.
+
 You can modify it by sets those environment variables. 
+
 For instance, using Powershell it would look like this:
 ` $env:USERNAME = "your username" `
+
 ` $env:PASSWORD = "your password" `
+
 ` $env:HOST = "your host machine" `
+
 ` $env:PORT = "port number" `
+
 ` $env:DB_NAME = "your database name" `
 
 Afterwards you can run the application:
