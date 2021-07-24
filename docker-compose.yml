@@ -30,6 +30,8 @@ services:
     environment:
       PASSWORD: password
       USERNAME: root
+      HOST: mysql
+      PORT: 3306
 volumes:
     mysql-data:
         driver: local

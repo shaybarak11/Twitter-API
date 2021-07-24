@@ -1,18 +1,20 @@
-# Foobar
+# Twitter-API
 
-Foobar is a Python library for dealing with word pluralization.
+Twitter-API is an API server written in FastAPI, which is a modern, fast (high-performance), web framework for building APIs with Python.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements of this project.
 
 ```bash
-pip install foobar
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-```python
+To run the application, you need to tell your terminal the application to work with by exporting the `USERNAME` `PASSWORD` environment variable:
+
+```bash
 import foobar
 
 # returns 'words'

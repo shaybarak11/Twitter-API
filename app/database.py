@@ -6,10 +6,12 @@ import os
 
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
-HOST = "mysql"
+HOST = os.getenv("HOST")
+PORT = os.getenv("PORT")
 DB_NAME = "twitter"
 
-SQLALCHEMY_DATABASE_URI = f'mysql+mysqldb://{USERNAME}:{PASSWORD}@{HOST}/{DB_NAME}'
+SQLALCHEMY_DATABASE_URI = f'mysql+mysqldb://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}'
+print(SQLALCHEMY_DATABASE_URI)
 
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
