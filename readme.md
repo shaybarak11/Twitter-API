@@ -12,25 +12,18 @@ pip install -r requirements.txt
 
 ## Usage
 
-To run the application, you need to tell your terminal the application to work with by exporting the `USERNAME` `PASSWORD` environment variable:
+To run the application, you need to tell your terminal the application to work with by exporting the environment variables that connects the application to your database.
+By default the application sets username as root, password as password, host as localhost, port as 3306 and "twitter" as the database's name.
+You can modify it by sets those environment variables. 
+For instance, using Powershell it would look like this:
+` $env:USERNAME = "your username" `
+` $env:PASSWORD = "your password" `
+` $env:HOST = "your host machine" `
+` $env:PORT = "port number" `
+` $env:DB_NAME = "your database name" `
 
-```bash
-import foobar
+Afterwards you can run the application:
 
-# returns 'words'
-foobar.pluralize('word')
+` python main.py `
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This command will start the web server on your localhost on port 8000 by default.
