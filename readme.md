@@ -55,5 +55,4 @@ To login the MySQL server via the adminer, you will have to provide some credent
 Server: mysql\
 Username: root\
 Password: password\
-Database: twitter\
-
+Database: twitter
