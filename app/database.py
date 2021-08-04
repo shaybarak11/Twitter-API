@@ -11,7 +11,6 @@ PORT = os.getenv("PORT", 3306)
 DB_NAME = os.getenv("DB_NAME", "twitter")
 
 SQLALCHEMY_DATABASE_URI = f'mysql+mysqldb://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}'
-print(SQLALCHEMY_DATABASE_URI)
 
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
